@@ -25,14 +25,14 @@ class CacheViewController : UIViewController{
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
-        /*cacheView.view.snp.makeConstraints { (maker) in
+        cacheView.view.snp.makeConstraints { (maker) in
             //maker.centerX.equalToSuperview()
             maker.bottom.equalTo(simulateButton).offset(-40)
             maker.top.equalTo(view).offset(65)
             maker.left.equalTo(view)
             maker.right.equalTo(view)
             
-        }*/
+        }
         
     }
     
