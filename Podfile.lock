@@ -1,0 +1,15 @@
+PODS:
+  - Eureka (3.0.0)
+  - SnapKit (3.2.0)
+
+DEPENDENCIES:
+  - Eureka
+  - SnapKit (~> 3.2.0)
+
+SPEC CHECKSUMS:
+  Eureka: f36fd440c3ebb7bfea0a4fbe6f16a05f1cb35906
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+
+PODFILE CHECKSUM: b36ce8920121b8eb75578b30718627e01e5484c8
+
+COCOAPODS: 1.2.1

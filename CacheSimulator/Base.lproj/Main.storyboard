@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AS1-cW-lhl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Simulator-->
+        <scene sceneID="tK5-FT-7gr">
+            <objects>
+                <viewController id="Vrz-WG-8Im" customClass="CacheViewController" customModule="CacheSimulator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iVL-mU-pgL"/>
+                        <viewControllerLayoutGuide type="bottom" id="5jW-gE-K5F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4EI-m5-Ezm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34w-Ku-ulK">
+                                <rect key="frame" x="168" y="580" width="39" height="30"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNn-AO-55J">
+                                <rect key="frame" x="132" y="542" width="110" height="30"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Start Simulation">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="E0l-8E-edB" kind="show" id="IKh-Yv-Vdp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="34w-Ku-ulK" firstAttribute="centerX" secondItem="4EI-m5-Ezm" secondAttribute="centerX" id="Vko-Ot-Nxr"/>
+                            <constraint firstItem="5jW-gE-K5F" firstAttribute="top" secondItem="34w-Ku-ulK" secondAttribute="bottom" constant="8" id="g8b-Xh-Buh"/>
+                            <constraint firstItem="FNn-AO-55J" firstAttribute="centerX" secondItem="4EI-m5-Ezm" secondAttribute="centerX" id="pKI-a4-SAw"/>
+                            <constraint firstItem="34w-Ku-ulK" firstAttribute="top" secondItem="FNn-AO-55J" secondAttribute="bottom" constant="8" id="xSL-Cp-GFh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Simulator" id="hkd-Ir-sEX"/>
+                    <connections>
+                        <outlet property="simulateButton" destination="FNn-AO-55J" id="ZO6-bX-0fJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ofl-xe-cld" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860" y="-114.69265367316342"/>
+        </scene>
+        <!--Charts-->
+        <scene sceneID="bsg-Yt-FaJ">
+            <objects>
+                <viewController id="E0l-8E-edB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kcN-oQ-BeG"/>
+                        <viewControllerLayoutGuide type="bottom" id="wZf-IP-lMq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TVI-9w-heM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="salam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPn-dI-Xhx">
+                                <rect key="frame" x="143" y="284" width="45" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Charts" id="pgU-v2-ckc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1XZ-07-0pD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2828" y="-112.89355322338831"/>
+        </scene>
+        <!--About us-->
+        <scene sceneID="Y4H-rm-CMt">
+            <objects>
+                <viewController id="tbd-fd-sGX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8sq-KQ-gaP"/>
+                        <viewControllerLayoutGuide type="bottom" id="6fV-a9-p43"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6A1-5p-mcD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="n6m-ft-TJX">
+                                <rect key="frame" x="24" y="28" width="327" height="383.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="260" verticalHuggingPriority="262" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="200" image="IUST_logo_color" translatesAutoresizingMaskIntoConstraints="NO" id="PGi-wT-4w2">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="200"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="259" verticalHuggingPriority="263" text="Cache Simulator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xQ-2X-VGT">
+                                        <rect key="frame" x="0.0" y="216" width="327" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="263" text="Developed by" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Auu-qO-HWB">
+                                        <rect key="frame" x="0.0" y="273" width="327" height="32.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <color key="textColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="262" text="Shayan Khorsandi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wp0-NA-5FL">
+                                        <rect key="frame" x="0.0" y="321.5" width="327" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="258" verticalHuggingPriority="261" text="Sajjad Aboutalebi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGE-cG-XJ6">
+                                        <rect key="frame" x="0.0" y="360.5" width="327" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="n6m-ft-TJX" secondAttribute="trailing" constant="8" id="TTd-bj-STe"/>
+                            <constraint firstItem="n6m-ft-TJX" firstAttribute="leading" secondItem="6A1-5p-mcD" secondAttribute="leadingMargin" constant="8" id="VEP-Du-DdR"/>
+                            <constraint firstItem="6fV-a9-p43" firstAttribute="top" secondItem="n6m-ft-TJX" secondAttribute="bottom" constant="206.5" id="kVR-OO-ksU"/>
+                            <constraint firstItem="n6m-ft-TJX" firstAttribute="top" secondItem="8sq-KQ-gaP" secondAttribute="bottom" constant="8" id="yxk-hS-3Mr"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About us" image="MenuIcon" id="Pyl-Xx-4JT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ehS-ur-feM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932" y="620.23988005997012"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mCt-zg-1it">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="AS1-cW-lhl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="EhP-96-VCO">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="cb6-fW-j2q" kind="relationship" relationship="viewControllers" id="uup-qh-9Pj"/>
+                        <segue destination="tbd-fd-sGX" kind="relationship" relationship="viewControllers" id="q3y-Wh-EhE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TRR-ND-j39" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18.399999999999999" y="-114.69265367316342"/>
+        </scene>
+        <!--Simulator-->
+        <scene sceneID="gVL-3C-TvE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cb6-fW-j2q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Simulator" image="ConvertIcon" id="v1K-7n-Hiq"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qCg-C8-gaA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Vrz-WG-8Im" kind="relationship" relationship="rootViewController" id="he9-DL-dNq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFB-vM-Tar" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920.79999999999995" y="-114.69265367316342"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ConvertIcon" width="48" height="32"/>
+        <image name="IUST_logo_color" width="313" height="317"/>
+        <image name="MenuIcon" width="25" height="25"/>
+    </resources>
+</document>

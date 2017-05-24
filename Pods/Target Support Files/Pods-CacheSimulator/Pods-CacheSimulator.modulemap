@@ -1,0 +1,6 @@
+framework module Pods_CacheSimulator {
+  umbrella header "Pods-CacheSimulator-umbrella.h"
+
+  export *
+  module * { export * }
+}
