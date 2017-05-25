@@ -12,13 +12,18 @@ import SnapKit
 
 class CacheView : FormViewController{
     
-    override init(style: UITableViewStyle) {
-        super.init(style: .plain)
-    }
+    //override init(style: UITableViewStyle) {
+    //    super.init(style: .plain)
+    //}
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    //init() {
+    //    super.init()
+    //}
+    
+    //required init?(coder aDecoder: NSCoder) {
+    //    super.init(coder: aDecoder)
+    //    fatalError("init(coder:) has not been implemented")
+    //}
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,6 +78,7 @@ class CacheView : FormViewController{
         }
         
         tableView?.separatorStyle = .singleLine
-        tableView?.isScrollEnabled = false
+        tableView?.isScrollEnabled = true
     }
+    
 }

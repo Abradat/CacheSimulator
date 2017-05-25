@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ScrollableGraphView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SnapKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>25CCEDA4034D5DBE41F0FBF5DEA7F646</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>675A114988AE198732ED4AD726408964</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>856927B960E935F545A704C23AEA0884</key>
+		<key>8CB24CB58802753105F1A3201CC749AC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BB7BF35E0A7054941B431C7E81E26F9B</key>
+		<key>B1F7D9565B5FAB013340A4AFD481A2A3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -6,6 +6,7 @@ target 'CacheSimulator' do
   use_frameworks!
   pod 'Eureka'
   pod 'SnapKit', '~> 3.2.0'
+  pod 'ScrollableGraphView'
   # Pods for CacheSimulator
 
 end

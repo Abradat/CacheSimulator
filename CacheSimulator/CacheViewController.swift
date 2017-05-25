@@ -12,7 +12,7 @@ import SnapKit
 
 class CacheViewController : UIViewController{
     
-    lazy var cacheView : CacheView = CacheView(style : .plain)
+    lazy var cacheView : CacheView = CacheView()
     
     @IBOutlet var simulateButton: UIButton!
     override func viewDidLoad() {
@@ -22,7 +22,7 @@ class CacheViewController : UIViewController{
         
     }
     
-    override func viewWillLayoutSubviews() {
+    /*override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
         cacheView.view.snp.makeConstraints { (maker) in
@@ -35,5 +35,6 @@ class CacheViewController : UIViewController{
         }
         
     }
+ */
     
 }
