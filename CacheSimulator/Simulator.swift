@@ -38,5 +38,16 @@ class Simulator: NSObject {
         self.nWay = nWay
         self.algorithm = algorithm
     }
+    
+    func simulate() {
+        switch method {
+        case .directMapped:
+            NSLog("directMapped")
+        case .setAssociative:
+            NSLog("setAssociative")
+        case .fullyAssociative:
+            NSLog("fullyAssociative")
+        }
+    }
 
 }
