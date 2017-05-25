@@ -16,6 +16,7 @@
 		3AE4D7651ED4B1530098FEBA /* CacheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE4D7641ED4B1530098FEBA /* CacheView.swift */; };
 		3AE4D7671ED4B1620098FEBA /* CacheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE4D7661ED4B1620098FEBA /* CacheViewController.swift */; };
 		7187004A5C53D71FD208AB20 /* Pods_CacheSimulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD4CA0AA0C1A326BB885756 /* Pods_CacheSimulator.framework */; };
+		C4274A0D1ED7680F0039FCEC /* Simulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4274A0C1ED7680F0039FCEC /* Simulator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		68993DEFB044F5AF073810B7 /* Pods-CacheSimulator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CacheSimulator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CacheSimulator/Pods-CacheSimulator.debug.xcconfig"; sourceTree = "<group>"; };
 		7AD4CA0AA0C1A326BB885756 /* Pods_CacheSimulator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CacheSimulator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71DA868C41119AFDFCFA4DE /* Pods-CacheSimulator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CacheSimulator.release.xcconfig"; path = "Pods/Target Support Files/Pods-CacheSimulator/Pods-CacheSimulator.release.xcconfig"; sourceTree = "<group>"; };
+		C4274A0C1ED7680F0039FCEC /* Simulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Simulator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		3AE4D74D1ED485030098FEBA /* CacheSimulator */ = {
 			isa = PBXGroup;
 			children = (
+				C4274A0B1ED767DE0039FCEC /* Simulator */,
 				3A5EACAA1ED5B16700F6AB59 /* Chart */,
 				3AE4D7681ED4B52A0098FEBA /* Cache */,
 				3AE4D74E1ED485030098FEBA /* AppDelegate.swift */,
@@ -111,6 +114,14 @@
 				7AD4CA0AA0C1A326BB885756 /* Pods_CacheSimulator.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4274A0B1ED767DE0039FCEC /* Simulator */ = {
+			isa = PBXGroup;
+			children = (
+				C4274A0C1ED7680F0039FCEC /* Simulator.swift */,
+			);
+			name = Simulator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +250,7 @@
 			files = (
 				3AE4D74F1ED485030098FEBA /* AppDelegate.swift in Sources */,
 				3AE4D7671ED4B1620098FEBA /* CacheViewController.swift in Sources */,
+				C4274A0D1ED7680F0039FCEC /* Simulator.swift in Sources */,
 				3AE4D7651ED4B1530098FEBA /* CacheView.swift in Sources */,
 				3A5EACA71ED5B03100F6AB59 /* ChartView.swift in Sources */,
 				3A5EACA91ED5B15E00F6AB59 /* ChartViewController.swift in Sources */,
