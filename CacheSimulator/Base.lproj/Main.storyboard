@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AS1-cW-lhl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AS1-cW-lhl">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,13 +23,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Simulator" id="hkd-Ir-sEX">
-                        <barButtonItem key="rightBarButtonItem" title="Start" id="THb-JV-cfu">
-                            <connections>
-                                <segue destination="E0l-8E-edB" kind="show" id="bA2-nF-azK"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Simulator" id="hkd-Ir-sEX"/>
+                    <connections>
+                        <segue destination="E0l-8E-edB" kind="show" identifier="start" id="fHy-Re-aoo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ofl-xe-cld" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -138,7 +135,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cb6-fW-j2q" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Simulator" image="ConvertIcon" id="v1K-7n-Hiq"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qCg-C8-gaA">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qCg-C8-gaA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
