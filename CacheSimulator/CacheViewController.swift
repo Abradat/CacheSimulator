@@ -73,8 +73,9 @@ class CacheViewController : FormViewController {
             <<< ButtonRow() {
                 $0.title = "Start"
         }.onCellSelection({ (buttom, row) in
-            print("Buttom Pressed")
+            //print("Buttom Pressed")
             self.performSegue(withIdentifier: "start", sender: self)
+            
         })
     
         tableView?.separatorStyle = .singleLine
@@ -82,6 +83,5 @@ class CacheViewController : FormViewController {
 
         
     }
-    
     
 }
