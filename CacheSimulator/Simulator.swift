@@ -28,13 +28,13 @@ enum Algorithm {
 
 
 class Simulator: NSObject {
-    //var method: Method
+    var method: Method
     //var nWay: nWay
     var algorithm: Algorithm
     
-    init(cacheSize: Float, blockSize: Float, algorithm: Algorithm) {
+    init(cacheSize: Float, blockSize: Float, method: Method, algorithm: Algorithm) {
         NSLog("Simulator Initalized")
-        
+        self.method = method
         
         self.algorithm = algorithm
     }
