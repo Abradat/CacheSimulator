@@ -28,26 +28,19 @@ enum Algorithm {
 
 
 class Simulator: NSObject {
-    var method: Method
-    var nWay: nWay
+    //var method: Method
+    //var nWay: nWay
     var algorithm: Algorithm
     
-    init(method: Method, nWay: nWay, algorithm: Algorithm) {
+    init(cacheSize: Float, blockSize: Float, algorithm: Algorithm) {
         NSLog("Simulator Initalized")
-        self.method = method
-        self.nWay = nWay
+        
+        
         self.algorithm = algorithm
     }
     
     func simulate() {
-        switch method {
-        case .directMapped:
-            NSLog("directMapped")
-        case .setAssociative:
-            NSLog("setAssociative")
-        case .fullyAssociative:
-            NSLog("fullyAssociative")
-        }
+        
     }
 
 }
