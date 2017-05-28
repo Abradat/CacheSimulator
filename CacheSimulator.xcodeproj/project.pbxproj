@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A4AC7C11EDB3A3E002D51AA /* Adresses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4AC7C01EDB3A3E002D51AA /* Adresses.swift */; };
+		3A4AC7C31EDB3C96002D51AA /* SimulatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4AC7C21EDB3C96002D51AA /* SimulatorViewController.swift */; };
 		3A5EACA71ED5B03100F6AB59 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EACA61ED5B03100F6AB59 /* ChartView.swift */; };
 		3A5EACA91ED5B15E00F6AB59 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EACA81ED5B15E00F6AB59 /* ChartViewController.swift */; };
 		3AE4D74F1ED485030098FEBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE4D74E1ED485030098FEBA /* AppDelegate.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		3A4AC7C01EDB3A3E002D51AA /* Adresses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adresses.swift; sourceTree = "<group>"; };
+		3A4AC7C21EDB3C96002D51AA /* SimulatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulatorViewController.swift; sourceTree = "<group>"; };
 		3A5EACA61ED5B03100F6AB59 /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		3A5EACA81ED5B15E00F6AB59 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		3AE4D74B1ED485030098FEBA /* CacheSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CacheSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +61,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		3A4AC7C41EDB3C9C002D51AA /* Simulator */ = {
+			isa = PBXGroup;
+			children = (
+				3A4AC7C21EDB3C96002D51AA /* SimulatorViewController.swift */,
+			);
+			name = Simulator;
+			sourceTree = "<group>";
+		};
 		3A5EACAA1ED5B16700F6AB59 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,7 +99,8 @@
 		3AE4D74D1ED485030098FEBA /* CacheSimulator */ = {
 			isa = PBXGroup;
 			children = (
-				C4274A0B1ED767DE0039FCEC /* Simulator */,
+				3A4AC7C41EDB3C9C002D51AA /* Simulator */,
+				C4274A0B1ED767DE0039FCEC /* Handlers */,
 				3A5EACAA1ED5B16700F6AB59 /* Chart */,
 				3AE4D7681ED4B52A0098FEBA /* Cache */,
 				3AE4D74E1ED485030098FEBA /* AppDelegate.swift */,
@@ -118,13 +129,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C4274A0B1ED767DE0039FCEC /* Simulator */ = {
+		C4274A0B1ED767DE0039FCEC /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
 				C4274A0C1ED7680F0039FCEC /* Simulator.swift */,
 				3A4AC7C01EDB3A3E002D51AA /* Adresses.swift */,
 			);
-			name = Simulator;
+			name = Handlers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 				3A5EACA71ED5B03100F6AB59 /* ChartView.swift in Sources */,
 				3A4AC7C11EDB3A3E002D51AA /* Adresses.swift in Sources */,
 				3A5EACA91ED5B15E00F6AB59 /* ChartViewController.swift in Sources */,
+				3A4AC7C31EDB3C96002D51AA /* SimulatorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

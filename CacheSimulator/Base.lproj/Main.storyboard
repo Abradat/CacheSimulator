@@ -25,7 +25,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Simulator" id="hkd-Ir-sEX"/>
                     <connections>
-                        <segue destination="E0l-8E-edB" kind="show" identifier="start" id="fHy-Re-aoo"/>
+                        <segue destination="pNR-UB-viW" kind="show" identifier="start" id="pln-Tp-FDK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ofl-xe-cld" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -49,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1XZ-07-0pD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2828" y="-112.89355322338831"/>
+            <point key="canvasLocation" x="2889" y="808"/>
         </scene>
         <!--About us-->
         <scene sceneID="Y4H-rm-CMt">
@@ -109,6 +109,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ehS-ur-feM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="932" y="620.23988005997012"/>
+        </scene>
+        <!--Simulator View Controller-->
+        <scene sceneID="EI0-zL-0jr">
+            <objects>
+                <viewController id="pNR-UB-viW" customClass="SimulatorViewController" customModule="CacheSimulator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WuW-Tk-ebb"/>
+                        <viewControllerLayoutGuide type="bottom" id="x3R-is-Dhq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xie-2L-DEU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hBc-qa-KLZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="guj-vM-hCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2841" y="-115"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="mCt-zg-1it">

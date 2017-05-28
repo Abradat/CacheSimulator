@@ -46,6 +46,7 @@ class CacheViewController : FormViewController {
             
             <<< ActionSheetRow<String>() {
                 $0.title = "Method"
+                $0.tag = "method"
                 $0.selectorTitle = "Pick your Method"
                 $0.options = ["Direct Mapped","Fully Associative","Set Associative"]
                 $0.value = "Direct Mapped"    // initially selected
@@ -123,5 +124,55 @@ class CacheViewController : FormViewController {
 
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let methodRow = self.form.rowBy(tag: "method")
+        let ramRow = self.form.rowBy(tag: "ram")
+        //let ramSize = Int(String(ramRow!.baseValue.components(separatedBy: " ")[0])
+        var ramSize = Int(String(describing: ramRow!.baseValue!).components(separatedBy: " ")[0])!
+        if(ramSize == 512) { ramSize *= Int(pow(2.0, 10.0)) }
+        else { ramSize *= Int(pow(2.0, 20.0)) }
+        
+        let cacheRow = self.form.rowBy(tag: "cache")
+        var cacheSize = Int(String(describing: cacheRow!.baseValue!).components(separatedBy: " ")[0])!
+        cacheSize *= Int(pow(2.0, 10.0))
+        
+        let blockRow = self.form.rowBy(tag: "block")
+        var blockSize = Int(String(describing: blockRow!.baseValue!).components(separatedBy: " ")[0])!
+        if(blockSize == 1 || blockSize == 2) { blockSize *= Int(pow(2.0, 10.0)) }
+        
+        let wayRow = self.form.rowBy(tag: "way")
+        let ways = Int(String(describing : wayRow!.baseValue!))!
+        
+        let algoRow = self.form.rowBy(tag: "algorithm")
+        let algorithm = String(describing : algoRow!.baseValue!).lowercased()
+        
+        let addressRow = self.form.rowBy(tag: "address")
+        let addressType = String(describing : addressRow!.baseValue!).lowercased()
+        
+        //print(String(describing: methodRow!.baseValue!))
+        let simulatorViewController = segue.destination as! SimulatorViewController
+        
+        simulatorViewController.addressType = addressType
+        
+        if(String(describing: methodRow!.baseValue!) == "Direct Mapped") {
+            //print("direct")
+            simulatorViewController.directMapping = DirectMapping(cacheSize: cacheSize, memorySize: ramSize, blockSize: blockSize)
+            
+        }
+        else if (String(describing: methodRow!.baseValue!) == "Fully Associative") {
+            //print("fully")
+            simulatorViewController.fullAssociative = FullyAssociative(cacheSize: cacheSize, memorySize: ramSize, blockSize: blockSize, policy: algorithm)
+        }
+        else {
+            //print("set")
+            simulatorViewController.setAssociative = SetAssociative(cacheSize: cacheSize, memorySize: ramSize, blockSize: blockSize, k: ways)
+        }
+    }
+    
+    //func parser(myString : String) -> Int() {
+    
+    
+    //}
     
 }
