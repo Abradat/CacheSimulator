@@ -21,6 +21,7 @@ class CacheViewController : FormViewController {
             +++ Section("Configuration")
             <<< ActionSheetRow<String>() {
                 $0.title = "RAM Size"
+                $0.tag = "ram"
                 $0.selectorTitle = "Pick your Ram Size"
                 $0.options = ["512 KB","1 MB","2 MB", "4 MB", "8 MB", "16 MB"]
                 $0.value = "512 KB"    // initially selected
@@ -28,6 +29,7 @@ class CacheViewController : FormViewController {
             
             <<< ActionSheetRow<String>() {
                 $0.title = "Cache Size"
+                $0.tag = "cache"
                 $0.selectorTitle = "Pick your Cache Size"
                 $0.options = ["1KB","2KB","4KB", "8 KB"]
                 $0.value = "1 KB"    // initially selected
@@ -35,9 +37,11 @@ class CacheViewController : FormViewController {
             
             <<< ActionSheetRow<String>() {
                 $0.title = "Block Size"
+                $0.tag = "block"
                 $0.selectorTitle = "Pick your Block Size"
                 $0.options = ["128 B","256 B","512 B", "1 KB", "2 KB"]
                 $0.value = "128 B"    // initially selected
+                
             }
             
             <<< ActionSheetRow<String>() {
@@ -45,25 +49,61 @@ class CacheViewController : FormViewController {
                 $0.selectorTitle = "Pick your Method"
                 $0.options = ["Direct Mapped","Fully Associative","Set Associative"]
                 $0.value = "Direct Mapped"    // initially selected
+                $0.onChange() {[unowned self] row in
+                    
+                    if(row.value! == "Fully Associative") {
+                        let algoRow = self.form.rowBy(tag: "algorithm")
+                        algoRow?.disabled = false
+                        algoRow?.evaluateDisabled()
+                        
+                        let wayRow = self.form.rowBy(tag: "way")
+                        wayRow?.disabled = true
+                        wayRow?.evaluateDisabled()
+                    }
+                    else if (row.value! == "Set Associative") {
+                        let algoRow = self.form.rowBy(tag: "algorithm")
+                        algoRow?.disabled = true
+                        algoRow?.evaluateDisabled()
+                        
+                        let wayRow = self.form.rowBy(tag: "way")
+                        wayRow?.disabled = false
+                        wayRow?.evaluateDisabled()
+                    }
+                    
+                    else {
+                        let algoRow = self.form.rowBy(tag: "algorithm")
+                        algoRow?.disabled = true
+                        algoRow?.evaluateDisabled()
+                        
+                        let wayRow = self.form.rowBy(tag: "way")
+                        wayRow?.disabled = true
+                        wayRow?.evaluateDisabled()
+                    }
+                }
             }
             
             <<< ActionSheetRow<String>() {
                 $0.title = "Set ?-Way"
+                $0.tag = "way"
                 $0.selectorTitle = "Set number of your ways"
                 $0.options = ["2","4","8"]
                 $0.value = "2"    // initially selected
+                $0.disabled = true
             }
             
             <<< ActionSheetRow<String>() {
                 $0.title = "Algorithm"
+                $0.tag = "algorithm"
                 $0.selectorTitle = "Pick your Algorithm"
                 $0.options = ["LRU","FIFO","Random"]
                 $0.value = "LRU"    // initially selected
+                $0.disabled = true
             }
             
             
             +++ Section("Address Trace Selection")
             <<< SegmentedRow<String>(){
+                $0.tag = "address"
                 $0.options = ["Random","art","mcf", "swim"]
                 $0.value = "Random"    // initially selected
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A4AC7C11EDB3A3E002D51AA /* Adresses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4AC7C01EDB3A3E002D51AA /* Adresses.swift */; };
 		3A5EACA71ED5B03100F6AB59 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EACA61ED5B03100F6AB59 /* ChartView.swift */; };
 		3A5EACA91ED5B15E00F6AB59 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EACA81ED5B15E00F6AB59 /* ChartViewController.swift */; };
 		3AE4D74F1ED485030098FEBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE4D74E1ED485030098FEBA /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A4AC7C01EDB3A3E002D51AA /* Adresses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adresses.swift; sourceTree = "<group>"; };
 		3A5EACA61ED5B03100F6AB59 /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		3A5EACA81ED5B15E00F6AB59 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		3AE4D74B1ED485030098FEBA /* CacheSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CacheSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				C4274A0C1ED7680F0039FCEC /* Simulator.swift */,
+				3A4AC7C01EDB3A3E002D51AA /* Adresses.swift */,
 			);
 			name = Simulator;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				C4274A0D1ED7680F0039FCEC /* Simulator.swift in Sources */,
 				3AE4D7651ED4B1530098FEBA /* CacheView.swift in Sources */,
 				3A5EACA71ED5B03100F6AB59 /* ChartView.swift in Sources */,
+				3A4AC7C11EDB3A3E002D51AA /* Adresses.swift in Sources */,
 				3A5EACA91ED5B15E00F6AB59 /* ChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

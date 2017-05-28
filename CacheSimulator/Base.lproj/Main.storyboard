@@ -113,7 +113,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="mCt-zg-1it">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TRR-ND-j39" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="AS1-cW-lhl" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="EhP-96-VCO">
@@ -126,13 +125,13 @@
                         <segue destination="tbd-fd-sGX" kind="relationship" relationship="viewControllers" id="q3y-Wh-EhE"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TRR-ND-j39" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-18.399999999999999" y="-114.69265367316342"/>
         </scene>
         <!--Simulator-->
         <scene sceneID="gVL-3C-TvE">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fFB-vM-Tar" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cb6-fW-j2q" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Simulator" image="ConvertIcon" id="v1K-7n-Hiq"/>
                     <toolbarItems/>
@@ -145,6 +144,7 @@
                         <segue destination="Vrz-WG-8Im" kind="relationship" relationship="rootViewController" id="he9-DL-dNq"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFB-vM-Tar" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="920.79999999999995" y="-114.69265367316342"/>
         </scene>

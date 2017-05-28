@@ -54,6 +54,7 @@ class DirectMapping : NSObject{
     var memorySize : Int
     var hit : Float
     var miss : Float
+    var addresses : Addresses
     
     
     init(cacheSize : Int, memorySize : Int, blockSize : Int) {
@@ -64,6 +65,7 @@ class DirectMapping : NSObject{
         self.hit = 0.0
         self.miss = 0.0
         self.memorySize = memorySize
+        self.addresses = Addresses()
         super.init()
         self.initCache()
         
