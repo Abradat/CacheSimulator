@@ -153,6 +153,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="run:" destination="pNR-UB-viW" eventType="touchUpInside" id="QOP-qc-xpy"/>
+                                                    <segue destination="3WD-b0-Fss" kind="show" identifier="run" id="G69-AH-6qc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0i-BM-gwO" customClass="RoundButton" customModule="CacheSimulator" customModuleProvider="target">
@@ -249,10 +250,10 @@
             </objects>
             <point key="canvasLocation" x="3780" y="-115.59220389805098"/>
         </scene>
-        <!--View Controller-->
+        <!--Final Simulator View Controller-->
         <scene sceneID="nte-zA-7hF">
             <objects>
-                <viewController id="3WD-b0-Fss" sceneMemberID="viewController">
+                <viewController id="3WD-b0-Fss" customClass="FinalSimulatorViewController" customModule="CacheSimulator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ELg-Oe-Q2Y"/>
                         <viewControllerLayoutGuide type="bottom" id="pva-Yr-9Mk"/>
@@ -293,6 +294,6 @@
         <image name="MenuIcon" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6I9-J0-2IE"/>
+        <segue reference="7Xj-YC-Q2N"/>
     </inferredMetricsTieBreakers>
 </document>

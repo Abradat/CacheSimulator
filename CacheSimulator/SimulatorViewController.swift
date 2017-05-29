@@ -16,7 +16,7 @@ class SimulatorViewController : simViewController {
     var cnt : Int = 0
     var res : [String] = [" ", " ", " "]
     var range : [String] = ["10"]
-    var hitRate : [Double] = [100.0]
+    var hitRate : [Double] = [0.0]
     var rate : Float?
     var remain : Int?
     var addresses : Addresses = Addresses()
@@ -208,6 +208,7 @@ class SimulatorViewController : simViewController {
         view.addSubview(graphView!)
         
         view.backgroundColor = UIColor.colorFromHex(hexString: "#333333")
+        hitMissLabel.text = "Hit/Miss"
         
         
     }
@@ -217,9 +218,22 @@ class SimulatorViewController : simViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        fullAssociative = nil
-        setAssociative = nil
-        directMapping = nil
+        switch segue.identifier {
+        case "back"?:
+            fullAssociative = nil
+            setAssociative = nil
+            directMapping = nil
+        case "run"?:
+            let finalSimulatorViewController = segue.destination as! FinalSimulatorViewController
+            //finalSimulatorViewController.hitRatio =
+        default:
+            preconditionFailure("Unexpected segue identifier.")
+        }
+
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     
