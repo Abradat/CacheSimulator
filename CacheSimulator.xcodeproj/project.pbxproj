@@ -19,6 +19,8 @@
 		3AE4D7671ED4B1620098FEBA /* CacheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE4D7661ED4B1620098FEBA /* CacheViewController.swift */; };
 		7187004A5C53D71FD208AB20 /* Pods_CacheSimulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD4CA0AA0C1A326BB885756 /* Pods_CacheSimulator.framework */; };
 		C4274A0D1ED7680F0039FCEC /* Simulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4274A0C1ED7680F0039FCEC /* Simulator.swift */; };
+		C49173E71EDC0675000F2AB6 /* simViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49173E61EDC0675000F2AB6 /* simViewController.swift */; };
+		C49173E91EDC0713000F2AB6 /* UIcolorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49173E81EDC0713000F2AB6 /* UIcolorHex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		7AD4CA0AA0C1A326BB885756 /* Pods_CacheSimulator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CacheSimulator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71DA868C41119AFDFCFA4DE /* Pods-CacheSimulator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CacheSimulator.release.xcconfig"; path = "Pods/Target Support Files/Pods-CacheSimulator/Pods-CacheSimulator.release.xcconfig"; sourceTree = "<group>"; };
 		C4274A0C1ED7680F0039FCEC /* Simulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Simulator.swift; sourceTree = "<group>"; };
+		C49173E61EDC0675000F2AB6 /* simViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = simViewController.swift; sourceTree = "<group>"; };
+		C49173E81EDC0713000F2AB6 /* UIcolorHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIcolorHex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				3AE4D7551ED485030098FEBA /* Assets.xcassets */,
 				3AE4D7571ED485030098FEBA /* LaunchScreen.storyboard */,
 				3AE4D75A1ED485030098FEBA /* Info.plist */,
+				C49173E61EDC0675000F2AB6 /* simViewController.swift */,
+				C49173E81EDC0713000F2AB6 /* UIcolorHex.swift */,
 			);
 			path = CacheSimulator;
 			sourceTree = "<group>";
@@ -270,6 +276,8 @@
 				3A4AC7C11EDB3A3E002D51AA /* Adresses.swift in Sources */,
 				3A5EACA91ED5B15E00F6AB59 /* ChartViewController.swift in Sources */,
 				3A4AC7C31EDB3C96002D51AA /* SimulatorViewController.swift in Sources */,
+				C49173E71EDC0675000F2AB6 /* simViewController.swift in Sources */,
+				C49173E91EDC0713000F2AB6 /* UIcolorHex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

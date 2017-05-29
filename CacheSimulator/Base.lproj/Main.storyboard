@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AS1-cW-lhl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Q4Z-2g-Hrg">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,6 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Simulation" image="ConvertIcon" id="rWI-Bj-hef"/>
                     <navigationItem key="navigationItem" title="Simulator" id="hkd-Ir-sEX"/>
                     <connections>
                         <segue destination="pNR-UB-viW" kind="show" identifier="start" id="pln-Tp-FDK"/>
@@ -30,7 +31,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ofl-xe-cld" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1860" y="-114.69265367316342"/>
+            <point key="canvasLocation" x="2799.1999999999998" y="-114.69265367316342"/>
         </scene>
         <!--Charts-->
         <scene sceneID="bsg-Yt-FaJ">
@@ -118,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ehS-ur-feM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="932" y="620.23988005997012"/>
+            <point key="canvasLocation" x="1860" y="631"/>
         </scene>
         <!--Simulator View Controller-->
         <scene sceneID="EI0-zL-0jr">
@@ -136,49 +137,29 @@
                     <navigationItem key="navigationItem" id="hBc-qa-KLZ">
                         <barButtonItem key="backBarButtonItem" title="Back" id="TXj-Ey-eSf"/>
                     </navigationItem>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="guj-vM-hCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2841" y="-115"/>
+            <point key="canvasLocation" x="3780" y="-115.59220389805098"/>
         </scene>
         <!--Tab Bar Controller-->
-        <scene sceneID="mCt-zg-1it">
+        <scene sceneID="Jdq-XF-CeF">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="AS1-cW-lhl" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Q4Z-2g-Hrg" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="EhP-96-VCO">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="xTI-wd-gCa">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="cb6-fW-j2q" kind="relationship" relationship="viewControllers" id="uup-qh-9Pj"/>
-                        <segue destination="tbd-fd-sGX" kind="relationship" relationship="viewControllers" id="q3y-Wh-EhE"/>
+                        <segue destination="Vrz-WG-8Im" kind="relationship" relationship="viewControllers" id="7Xj-YC-Q2N"/>
+                        <segue destination="tbd-fd-sGX" kind="relationship" relationship="viewControllers" id="Nar-kq-l7P"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TRR-ND-j39" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bJ9-gv-B7g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-18.399999999999999" y="-114.69265367316342"/>
-        </scene>
-        <!--Simulator-->
-        <scene sceneID="gVL-3C-TvE">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cb6-fW-j2q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Simulator" image="ConvertIcon" id="v1K-7n-Hiq"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qCg-C8-gaA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Vrz-WG-8Im" kind="relationship" relationship="rootViewController" id="he9-DL-dNq"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fFB-vM-Tar" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="920.79999999999995" y="-114.69265367316342"/>
+            <point key="canvasLocation" x="1860" y="-114.69265367316342"/>
         </scene>
     </scenes>
     <resources>
