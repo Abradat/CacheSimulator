@@ -18,6 +18,7 @@ class CacheViewController : FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         form
+            +++ Section()
             +++ Section("Configuration")
             <<< ActionSheetRow<String>() {
                 $0.title = "RAM Size"
@@ -126,6 +127,7 @@ class CacheViewController : FormViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         let methodRow = self.form.rowBy(tag: "method")
         let ramRow = self.form.rowBy(tag: "ram")
         //let ramSize = Int(String(ramRow!.baseValue.components(separatedBy: " ")[0])

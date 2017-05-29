@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A3C82991EDC8BFE00338233 /* FinalSimulatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C82981EDC8BFE00338233 /* FinalSimulatorViewController.swift */; };
+		3A3C829D1EDC8C3100338233 /* FinalSimulatorChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C829C1EDC8C3100338233 /* FinalSimulatorChartViewController.swift */; };
 		3A4AC7C11EDB3A3E002D51AA /* Adresses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4AC7C01EDB3A3E002D51AA /* Adresses.swift */; };
 		3A4AC7C31EDB3C96002D51AA /* SimulatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4AC7C21EDB3C96002D51AA /* SimulatorViewController.swift */; };
 		3A4AC7C61EDC0F25002D51AA /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4AC7C51EDC0F25002D51AA /* RoundButton.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A3C82981EDC8BFE00338233 /* FinalSimulatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalSimulatorViewController.swift; sourceTree = "<group>"; };
+		3A3C829C1EDC8C3100338233 /* FinalSimulatorChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalSimulatorChartViewController.swift; sourceTree = "<group>"; };
 		3A4AC7C01EDB3A3E002D51AA /* Adresses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adresses.swift; sourceTree = "<group>"; };
 		3A4AC7C21EDB3C96002D51AA /* SimulatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulatorViewController.swift; sourceTree = "<group>"; };
 		3A4AC7C51EDC0F25002D51AA /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -65,6 +69,15 @@
 				A71DA868C41119AFDFCFA4DE /* Pods-CacheSimulator.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		3A3C829A1EDC8C0600338233 /* Final Simulator */ = {
+			isa = PBXGroup;
+			children = (
+				3A3C82981EDC8BFE00338233 /* FinalSimulatorViewController.swift */,
+				3A3C829C1EDC8C3100338233 /* FinalSimulatorChartViewController.swift */,
+			);
+			name = "Final Simulator";
 			sourceTree = "<group>";
 		};
 		3A4AC7C41EDB3C9C002D51AA /* Simulator */ = {
@@ -115,6 +128,7 @@
 		3AE4D74D1ED485030098FEBA /* CacheSimulator */ = {
 			isa = PBXGroup;
 			children = (
+				3A3C829A1EDC8C0600338233 /* Final Simulator */,
 				3A4AC7C71EDC0F2A002D51AA /* UI */,
 				3A4AC7C41EDB3C9C002D51AA /* Simulator */,
 				C4274A0B1ED767DE0039FCEC /* Handlers */,
@@ -280,11 +294,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AE4D74F1ED485030098FEBA /* AppDelegate.swift in Sources */,
+				3A3C829D1EDC8C3100338233 /* FinalSimulatorChartViewController.swift in Sources */,
 				3AE4D7671ED4B1620098FEBA /* CacheViewController.swift in Sources */,
 				C4274A0D1ED7680F0039FCEC /* Simulator.swift in Sources */,
 				3AE4D7651ED4B1530098FEBA /* CacheView.swift in Sources */,
 				3A4AC7C61EDC0F25002D51AA /* RoundButton.swift in Sources */,
 				3A5EACA71ED5B03100F6AB59 /* ChartView.swift in Sources */,
+				3A3C82991EDC8BFE00338233 /* FinalSimulatorViewController.swift in Sources */,
 				3A4AC7C11EDB3A3E002D51AA /* Adresses.swift in Sources */,
 				3A5EACA91ED5B15E00F6AB59 /* ChartViewController.swift in Sources */,
 				3A4AC7C31EDB3C96002D51AA /* SimulatorViewController.swift in Sources */,
