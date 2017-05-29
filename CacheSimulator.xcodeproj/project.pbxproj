@@ -69,6 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				3A4AC7C21EDB3C96002D51AA /* SimulatorViewController.swift */,
+				C49173E61EDC0675000F2AB6 /* simViewController.swift */,
+				C49173E81EDC0713000F2AB6 /* UIcolorHex.swift */,
 			);
 			name = Simulator;
 			sourceTree = "<group>";
@@ -112,8 +114,6 @@
 				3AE4D7551ED485030098FEBA /* Assets.xcassets */,
 				3AE4D7571ED485030098FEBA /* LaunchScreen.storyboard */,
 				3AE4D75A1ED485030098FEBA /* Info.plist */,
-				C49173E61EDC0675000F2AB6 /* simViewController.swift */,
-				C49173E81EDC0713000F2AB6 /* UIcolorHex.swift */,
 			);
 			path = CacheSimulator;
 			sourceTree = "<group>";
