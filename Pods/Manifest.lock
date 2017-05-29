@@ -1,18 +1,21 @@
 PODS:
   - Eureka (3.0.0)
+  - PTPopupWebView (0.4.0)
   - ScrollableGraphView (3.1.0)
   - SnapKit (3.2.0)
 
 DEPENDENCIES:
   - Eureka
+  - PTPopupWebView
   - ScrollableGraphView
   - SnapKit (~> 3.2.0)
 
 SPEC CHECKSUMS:
   Eureka: f36fd440c3ebb7bfea0a4fbe6f16a05f1cb35906
+  PTPopupWebView: 9db92ddc0629ed735dee23d4388d67b18158d55c
   ScrollableGraphView: e2c8bedc7bbb643e8ac57b9456070d68355c4e4c
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
 
-PODFILE CHECKSUM: 7463341aec7c263bc2c084a494e62fc12d4e4104
+PODFILE CHECKSUM: c35bbe4f66102b906827b3733da715248b428835
 
 COCOAPODS: 1.2.1

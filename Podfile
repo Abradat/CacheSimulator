@@ -7,6 +7,7 @@ target 'CacheSimulator' do
   pod 'Eureka'
   pod 'SnapKit', '~> 3.2.0'
   pod 'ScrollableGraphView'
+  pod "PTPopupWebView"
   # Pods for CacheSimulator
 
 end

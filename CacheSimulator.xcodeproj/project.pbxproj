@@ -24,6 +24,11 @@
 		C4274A0D1ED7680F0039FCEC /* Simulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4274A0C1ED7680F0039FCEC /* Simulator.swift */; };
 		C49173E71EDC0675000F2AB6 /* simViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49173E61EDC0675000F2AB6 /* simViewController.swift */; };
 		C49173E91EDC0713000F2AB6 /* UIcolorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49173E81EDC0713000F2AB6 /* UIcolorHex.swift */; };
+		C49173ED1EDCB7B6000F2AB6 /* aboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49173EC1EDCB7B6000F2AB6 /* aboutViewController.swift */; };
+		C49173EF1EDCC393000F2AB6 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = C49173EE1EDCC393000F2AB6 /* 1.png */; };
+		C49173F31EDCC3C3000F2AB6 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = C49173F01EDCC3C3000F2AB6 /* 3.png */; };
+		C49173F41EDCC3C3000F2AB6 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = C49173F11EDCC3C3000F2AB6 /* 4.png */; };
+		C49173F51EDCC3C3000F2AB6 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = C49173F21EDCC3C3000F2AB6 /* 2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +53,11 @@
 		C4274A0C1ED7680F0039FCEC /* Simulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Simulator.swift; sourceTree = "<group>"; };
 		C49173E61EDC0675000F2AB6 /* simViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = simViewController.swift; sourceTree = "<group>"; };
 		C49173E81EDC0713000F2AB6 /* UIcolorHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIcolorHex.swift; sourceTree = "<group>"; };
+		C49173EC1EDCB7B6000F2AB6 /* aboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aboutViewController.swift; sourceTree = "<group>"; };
+		C49173EE1EDCC393000F2AB6 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		C49173F01EDCC3C3000F2AB6 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		C49173F11EDCC3C3000F2AB6 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		C49173F21EDCC3C3000F2AB6 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +138,8 @@
 		3AE4D74D1ED485030098FEBA /* CacheSimulator */ = {
 			isa = PBXGroup;
 			children = (
+				C49173EB1EDCB7A5000F2AB6 /* About */,
+				C49173EA1EDCB71F000F2AB6 /* DOC */,
 				3A3C829A1EDC8C0600338233 /* Final Simulator */,
 				3A4AC7C71EDC0F2A002D51AA /* UI */,
 				3A4AC7C41EDB3C9C002D51AA /* Simulator */,
@@ -167,6 +179,25 @@
 				3A4AC7C01EDB3A3E002D51AA /* Adresses.swift */,
 			);
 			name = Handlers;
+			sourceTree = "<group>";
+		};
+		C49173EA1EDCB71F000F2AB6 /* DOC */ = {
+			isa = PBXGroup;
+			children = (
+				C49173F01EDCC3C3000F2AB6 /* 3.png */,
+				C49173F11EDCC3C3000F2AB6 /* 4.png */,
+				C49173F21EDCC3C3000F2AB6 /* 2.png */,
+				C49173EE1EDCC393000F2AB6 /* 1.png */,
+			);
+			name = DOC;
+			sourceTree = "<group>";
+		};
+		C49173EB1EDCB7A5000F2AB6 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				C49173EC1EDCB7B6000F2AB6 /* aboutViewController.swift */,
+			);
+			name = About;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +263,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C49173F41EDCC3C3000F2AB6 /* 4.png in Resources */,
+				C49173F31EDCC3C3000F2AB6 /* 3.png in Resources */,
+				C49173F51EDCC3C3000F2AB6 /* 2.png in Resources */,
 				3AE4D7591ED485030098FEBA /* LaunchScreen.storyboard in Resources */,
+				C49173EF1EDCC393000F2AB6 /* 1.png in Resources */,
 				3AE4D7561ED485030098FEBA /* Assets.xcassets in Resources */,
 				3AE4D7541ED485030098FEBA /* Main.storyboard in Resources */,
 			);
@@ -303,6 +338,7 @@
 				3A3C82991EDC8BFE00338233 /* FinalSimulatorViewController.swift in Sources */,
 				3A4AC7C11EDB3A3E002D51AA /* Adresses.swift in Sources */,
 				3A5EACA91ED5B15E00F6AB59 /* ChartViewController.swift in Sources */,
+				C49173ED1EDCB7B6000F2AB6 /* aboutViewController.swift in Sources */,
 				3A4AC7C31EDB3C96002D51AA /* SimulatorViewController.swift in Sources */,
 				C49173E71EDC0675000F2AB6 /* simViewController.swift in Sources */,
 				C49173E91EDC0713000F2AB6 /* UIcolorHex.swift in Sources */,
