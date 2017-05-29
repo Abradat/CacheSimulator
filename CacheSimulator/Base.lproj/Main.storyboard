@@ -208,8 +208,10 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="260" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Jw-mi-jeT" customClass="RoundButton" customModule="CacheSimulator" customModuleProvider="target">
                                 <rect key="frame" x="136" y="622" width="103" height="30"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Back"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="back:" destination="pNR-UB-viW" eventType="touchUpInside" id="K42-U0-1R5"/>
                                     <segue destination="Vrz-WG-8Im" kind="show" identifier="back" id="6I9-J0-2IE"/>
@@ -326,6 +328,6 @@
         <image name="MenuIcon" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="v7x-QY-Ims"/>
+        <segue reference="6I9-J0-2IE"/>
     </inferredMetricsTieBreakers>
 </document>
