@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import PTPopupWebView
+
 
 class aboutViewController: UIViewController {
 
@@ -19,12 +19,7 @@ class aboutViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        let popupvc = PTPopupWebView(frame: view.frame)
-        popupvc.addButton(PTPopupWebViewButton(type: .custom))
-        popupvc.URL(string: "https://github.com/")
-        popupvc.title("")
         
-        view.addSubview(popupvc)
  
         
         
