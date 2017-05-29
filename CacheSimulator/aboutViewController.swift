@@ -11,6 +11,9 @@ import UIKit
 
 class aboutViewController: UIViewController {
 
+    @IBAction func contactus(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "https://github.com/Abradat/CacheSimulator/issues")!)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
