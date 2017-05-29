@@ -92,16 +92,18 @@ class DirectMapping : NSObject{
         self.cache[addressBlock % self.cacheBlocks] = addressBlock
     }
     
-    func simulate(address : Int){
+    func simulate(address : Int) -> [String]{
         print("Word \(address) with Block \(self.getAddressBlock(address: address)) is ")
         if self.checkHit(address: address){
             self.hit += 1.0
             print("hit")
+            return ["hit", String(address), String(self.getAddressBlock(address: address))]
         }
         else{
             self.miss += 1.0
             self.addBlock(address: address)
             print("miss")
+            return ["miss", String(address), String(self.getAddressBlock(address: address))]
         }
     }
     

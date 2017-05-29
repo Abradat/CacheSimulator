@@ -26,10 +26,7 @@ class simViewController: UIViewController {
         
         
         
-        
-        
-        
-        graphView.set(data: data, withLabels: labels)
+        //graphView.set(data: data, withLabels: labels)
         graphView.backgroundFillColor = UIColor.colorFromHex(hexString: "#333333")
         
         graphView.lineWidth = 1
@@ -59,6 +56,8 @@ class simViewController: UIViewController {
         graphView.animationDuration = 1.5
         graphView.rangeMax = 50
         graphView.shouldRangeAlwaysStartAtZero = true
+        
+        graphView.topMargin = 50.0
         return graphView
     }
 
