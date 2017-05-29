@@ -8,6 +8,7 @@
 
 import UIKit
 import PTPopupWebView
+
 class DocumentViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -15,7 +16,7 @@ class DocumentViewController: UIViewController {
 
         let popupvc = PTPopupWebView(frame: view.frame)
         popupvc.addButton(PTPopupWebViewButton(type: .custom))
-        popupvc.URL(string: "https://github.com/aboutsajjad/facebookAlbum/blob/master/README.md")
+        popupvc.URL(string: "https://github.com/Abradat/CacheSimulator/blob/master/README.md")
         popupvc.title("")
         
         view.addSubview(popupvc)
