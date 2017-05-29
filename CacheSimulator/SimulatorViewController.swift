@@ -72,7 +72,7 @@ class SimulatorViewController : simViewController {
         performSegue(withIdentifier: "back", sender: self)
     }
     @IBAction func run(_ sender: Any) {
-        
+        performSegue(withIdentifier: "run", sender: self)
     }
     
     @IBAction func nextStep(_ sender: Any) {
@@ -212,6 +212,87 @@ class SimulatorViewController : simViewController {
         
         
     }
+    
+    func runSimulation() -> Float {
+        print("start")
+        var cnt : Int = 0
+        var hitRate : Float?
+        if(flag[0] == 1) {
+            
+            if(addressType == "art") {
+                //res = directMapping.simulate(address: Int(addresses.art[cnt], radix : 16)!)
+                for address in addresses.art {
+                    _ = directMapping.simulate(address: Int(address, radix : 16)!)
+                    cnt += 1
+                }
+                
+            }
+            else if(addressType == "mcf") {
+                for address in addresses.mcf {
+                    _ = directMapping.simulate(address: Int(address, radix : 16)!)
+                }
+                
+            }
+            else {
+                for address in addresses.swim {
+                    _ = directMapping.simulate(address: Int(address, radix : 16)!)
+                }
+            }
+            
+            hitRate = directMapping.hitRatio()
+        }
+        else if (flag[1] == 1) {
+            
+            if(addressType == "art") {
+                for address in addresses.art {
+                    _ = fullAssociative.simulate(address: Int(address, radix : 16)!)
+                }
+                
+            }
+            else if(addressType == "mcf") {
+                for address in addresses.mcf {
+                    _ = fullAssociative.simulate(address: Int(address, radix : 16)!)
+                }
+                
+            }
+            else {
+                for address in addresses.swim {
+                    _ = directMapping.simulate(address: Int(address, radix : 16)!)
+                }
+            }
+            
+            hitRate = fullAssociative.hitRatio()
+            
+        }
+            
+        else {
+            
+            if(addressType == "art") {
+                for address in addresses.art {
+                    _ = setAssociative.simulate(address: Int(address, radix : 16)!)
+                }
+                
+            }
+            else if(addressType == "mcf") {
+                for address in addresses.mcf {
+                    _ = setAssociative.simulate(address: Int(address, radix : 16)!)
+                }
+                
+            }
+            else {
+                for address in addresses.swim {
+                    _ = setAssociative.simulate(address: Int(address, radix : 16)!)
+                }
+            }
+            
+            hitRate = setAssociative.hitRatio()
+            
+        }
+        print("finished \(cnt)")
+        return hitRate!
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         titleLabel.text = titleVal
@@ -224,8 +305,13 @@ class SimulatorViewController : simViewController {
             setAssociative = nil
             directMapping = nil
         case "run"?:
+            
             let finalSimulatorViewController = segue.destination as! FinalSimulatorViewController
-            //finalSimulatorViewController.hitRatio =
+            finalSimulatorViewController.hitRatio = runSimulation()
+            if(flag[0] == 1) { finalSimulatorViewController.titleVal = "Direct Mapped" }
+            else if (flag[1] == 1) { finalSimulatorViewController.titleVal = "Fully Associative" }
+            else { finalSimulatorViewController.titleVal = "Set Associative" }
+            
         default:
             preconditionFailure("Unexpected segue identifier.")
         }

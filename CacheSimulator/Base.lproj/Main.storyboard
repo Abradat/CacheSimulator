@@ -261,8 +261,40 @@
                     <view key="view" contentMode="scaleToFill" id="9DN-RO-7vd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJo-CX-V6F" customClass="RoundButton" customModule="CacheSimulator" customModuleProvider="target">
+                                <rect key="frame" x="116" y="551" width="143" height="36"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backHome:" destination="3WD-b0-Fss" eventType="touchUpInside" id="jy7-HT-64T"/>
+                                    <segue destination="Vrz-WG-8Im" kind="show" identifier="backHome" id="v7x-QY-Ims"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gl-3O-6bK">
+                                <rect key="frame" x="76" y="491" width="223" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MJo-CX-V6F" firstAttribute="top" secondItem="9Gl-3O-6bK" secondAttribute="bottom" constant="30" id="Nsx-th-a9m"/>
+                            <constraint firstItem="MJo-CX-V6F" firstAttribute="leading" secondItem="9DN-RO-7vd" secondAttribute="leadingMargin" constant="100" id="RCL-rS-1KI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MJo-CX-V6F" secondAttribute="trailing" constant="100" id="Yyj-8t-gGz"/>
+                            <constraint firstItem="MJo-CX-V6F" firstAttribute="centerX" secondItem="9DN-RO-7vd" secondAttribute="centerX" id="Z8s-4f-bm1"/>
+                            <constraint firstItem="9Gl-3O-6bK" firstAttribute="leading" relation="lessThanOrEqual" secondItem="9DN-RO-7vd" secondAttribute="leadingMargin" constant="60" id="a6p-zM-ZCC"/>
+                            <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="9Gl-3O-6bK" secondAttribute="trailing" constant="60" id="s4c-R6-MvU"/>
+                            <constraint firstItem="pva-Yr-9Mk" firstAttribute="top" secondItem="MJo-CX-V6F" secondAttribute="bottom" constant="80" id="te8-gI-P3T"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="9Gl-3O-6bK" id="rHB-TL-LE1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NSj-8H-QVq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -294,6 +326,6 @@
         <image name="MenuIcon" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7Xj-YC-Q2N"/>
+        <segue reference="v7x-QY-Ims"/>
     </inferredMetricsTieBreakers>
 </document>

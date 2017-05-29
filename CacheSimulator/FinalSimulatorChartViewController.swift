@@ -27,7 +27,7 @@ class FinalSimulatorChartViewController : UIViewController {
         graphView.shouldDrawBarLayer = true
         
         // Customise the bar.
-        graphView.barWidth = 25
+        graphView.barWidth = 75
         graphView.barLineWidth = 1
         graphView.barLineColor = UIColor.colorFromHex(hexString: "#777777")
         graphView.barColor = UIColor.colorFromHex(hexString: "#555555")
@@ -42,11 +42,12 @@ class FinalSimulatorChartViewController : UIViewController {
         graphView.shouldAnimateOnStartup = true
         graphView.shouldAdaptRange = true
         graphView.adaptAnimationType = ScrollableGraphViewAnimationType.elastic
-        graphView.animationDuration = 1.5
-        graphView.rangeMax = 50
+        graphView.animationDuration = 1.0
+        graphView.rangeMax = 100
+        
         graphView.shouldRangeAlwaysStartAtZero = true
         
-        
+        graphView.leftmostPointPadding = view.frame.width/2
         graphView.topMargin = 50.0
         
         
