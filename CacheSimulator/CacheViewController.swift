@@ -32,7 +32,7 @@ class CacheViewController : FormViewController {
                 $0.title = "Cache Size"
                 $0.tag = "cache"
                 $0.selectorTitle = "Pick your Cache Size"
-                $0.options = ["1KB","2KB","4KB", "8 KB"]
+                $0.options = ["1 KB","2 KB","4 KB", "8 KB"]
                 $0.value = "1 KB"    // initially selected
             }
             
