@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PTPopupWebView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-CacheSimulator.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,7 +32,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>25CCEDA4034D5DBE41F0FBF5DEA7F646</key>
+		<key>238C51DDC689B5F76B84BBF36EC4844C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>40B80DD123580BD8D3E105BE56E7508A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -37,12 +47,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8CB24CB58802753105F1A3201CC749AC</key>
+		<key>A1CCBC314E7A241340FFA94D2499641D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B1F7D9565B5FAB013340A4AFD481A2A3</key>
+		<key>B3C9BB4502ED526321A63F7BA7DEC873</key>
 		<dict>
 			<key>primary</key>
 			<true/>
