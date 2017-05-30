@@ -41,3 +41,5 @@ The set associative cache is a good compromise between the direct mapped and set
 | N-Way Set Associative, N>1 | Very Good, Better as N Increases      |    Good, Worse as N Increases         |
 
 In the "real world", the direct mapped and set associative caches are by far the most common. Direct mapping is used more for level 2 caches on motherboards, while the higher-performance set-associative cache is found more commonly on the smaller primary caches contained within processors.
+
+![alt text](https://github.com/Abradat/CacheSimulator/blob/master/CacheSimulator/cahrt.png)
