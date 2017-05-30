@@ -22,6 +22,7 @@
 		3AE4D7671ED4B1620098FEBA /* CacheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE4D7661ED4B1620098FEBA /* CacheViewController.swift */; };
 		7187004A5C53D71FD208AB20 /* Pods_CacheSimulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD4CA0AA0C1A326BB885756 /* Pods_CacheSimulator.framework */; };
 		C41DA9CC1EDCC90B00E165E6 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41DA9CB1EDCC90B00E165E6 /* DocumentViewController.swift */; };
+		C41DA9CE1EDD584C00E165E6 /* FuckmeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41DA9CD1EDD584C00E165E6 /* FuckmeViewController.swift */; };
 		C4274A0D1ED7680F0039FCEC /* Simulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4274A0C1ED7680F0039FCEC /* Simulator.swift */; };
 		C49173E71EDC0675000F2AB6 /* simViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49173E61EDC0675000F2AB6 /* simViewController.swift */; };
 		C49173E91EDC0713000F2AB6 /* UIcolorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49173E81EDC0713000F2AB6 /* UIcolorHex.swift */; };
@@ -52,6 +53,7 @@
 		7AD4CA0AA0C1A326BB885756 /* Pods_CacheSimulator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CacheSimulator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71DA868C41119AFDFCFA4DE /* Pods-CacheSimulator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CacheSimulator.release.xcconfig"; path = "Pods/Target Support Files/Pods-CacheSimulator/Pods-CacheSimulator.release.xcconfig"; sourceTree = "<group>"; };
 		C41DA9CB1EDCC90B00E165E6 /* DocumentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
+		C41DA9CD1EDD584C00E165E6 /* FuckmeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuckmeViewController.swift; sourceTree = "<group>"; };
 		C4274A0C1ED7680F0039FCEC /* Simulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Simulator.swift; sourceTree = "<group>"; };
 		C49173E61EDC0675000F2AB6 /* simViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = simViewController.swift; sourceTree = "<group>"; };
 		C49173E81EDC0713000F2AB6 /* UIcolorHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIcolorHex.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				C49173EC1EDCB7B6000F2AB6 /* aboutViewController.swift */,
+				C41DA9CD1EDD584C00E165E6 /* FuckmeViewController.swift */,
 			);
 			name = About;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				3A4AC7C31EDB3C96002D51AA /* SimulatorViewController.swift in Sources */,
 				C49173E71EDC0675000F2AB6 /* simViewController.swift in Sources */,
 				C49173E91EDC0713000F2AB6 /* UIcolorHex.swift in Sources */,
+				C41DA9CE1EDD584C00E165E6 /* FuckmeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
