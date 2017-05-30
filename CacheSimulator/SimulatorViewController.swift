@@ -257,7 +257,7 @@ class SimulatorViewController : simViewController {
             }
             else {
                 for address in addresses.swim {
-                    _ = directMapping.simulate(address: Int(address, radix : 16)!)
+                    _ = fullAssociative.simulate(address: Int(address, radix : 16)!)
                 }
             }
             
